@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Platzi</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <figure>
+    <header class="header">
+        <figure class="logo">
             <img src="images/logo.png" alt="Logo de http://santiagopadron.com">
-            <link rel="icon" type="image/png" href="images/favicon.png"/>
         </figure>
-        
-        <nav>
+
+        <nav class="menu">
             <ol>
                 <li>
-                    <a href="#proyectos">Portafolio</a>
+                    <a class="link" href="#proyectos">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#experiencia">Experiencia</a>
+                    <a class="link" href="#experiencia">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#contacto">Trabajemos juntos</a>
+                    <a class="link" href="#contacto">Trabajemos juntos</a>
                 </li>
             </ol>
         </nav>
     </header>
-    <section>
-        <h1>Hola! Soy <strong>Santiago Padròn</strong> Desarrollador <br> 
+    <section class="hero">
+        <h1>Hola! Soy <strong>Santiago Padròn</strong><br> Desarrollador
         <strong>Python</strong> con <br>
         pasion por la <strong>inteligencia artificial</strong></h1>
-        <img src="images/hero.jpg" alt="Imagen principal del sitio" width="500" height="300">
+        
     </section>
-    <section id="proyectos">
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3>Platzi Video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Puedes verlo en:</strong> <a href="https://www.platzi.com/native">www.platzi.com/native</a></small></p>
-            <p>Platzi Video fue el resultado de 3 meses de trabajo 
-                para crear la mejor app para enseñar el funcionamiento 
-                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados. </p>
-            <img src="images/platzi-video-react-native.png" alt="proyecto del curso de React Native." width="500">
-    </section>
-    <section id="experiencia">
-        <article>
-            <h2>Mas sobre mi experiencia</h2>
-            <figure>
-                <img src="images/platzi-conf.jpg" alt="Platzi conf" width="500" height="">
+        <article class="project">
+            <div class="project_details">
+                <h3 class="project_title">Platzi Video</h3>
+                <h6 class="project_course">React Native / React</h6>
+                <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                <p class="project_url"><small><strong>Puedes verlo en:</strong> <a href="https://www.platzi.com/native">www.platzi.com/native</a></small></p>
+                <p class="project_description">Platzi Video fue el resultado de 3 meses de trabajo
+                    para crear la mejor app para enseñar el funcionamiento
+                    de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados. </p>
+            </div>
+            <figure class="project_imageContainer">
+                <img class="project_image" src="images/platzi-video-react-native.png" alt="proyecto del curso de React Native." width="500">
             </figure>
-            <h3>Platziconf Mèxico 2018</h3>
-            <p>El evento mas grande sobre gente que quiere aprender mas de internet. En estè evento te comparto como tener una vida de constante aprendizaje</p>
-            <a href="">Ver platica</a>
+    </section>
+    <section id="eventos" class="events">
+        <h2>Mas sobre mi experiencia</h2>
+        <article class="event">
+            <figure class="event_imageContainer">
+                <img class="event_image" src="images/platzi-conf.jpg" alt="Platzi conf" width="500" height="">
+            </figure>
+            <h3 class="event_title">Platziconf Mèxico 2018</h3>
+            <p class="event_description">El evento mas grande sobre gente que quiere aprender mas de internet. En estè evento te comparto como tener una vida de constante aprendizaje</p>
+            <a class="event_url" href="">Ver platica</a>
         </article>
     </section>
-    <section id="contacto">
-        seccion contacto
-    </section>
-    <footer>
-        <form action="#" method="POST">
-            <h3>¿CREAMOS ALGO JUNTOS?</h3>
+    <section id="contacto" class="contact">
+        <form action="#" method="POST" class="form_email" >
+            <h3 >¿Creamos algo juntos?</h3>
             <input type="email" name="email" id="email" placeholder="Dèjame tu email">
             <button>Enviar</button>
         </form>
+    </section>
+    <footer class="footer">
+        footer
     </footer>
 </body>
 </html>
