@@ -52,10 +52,14 @@ h1 strong{
     background-repeat:no-repeat;
     background-position-x:right;
 }
+.hero h1{
+    margin-right:50%;
+}
 .project{
     padding:20px;
     border:1px solid gray;
-    border-top-right-radius:10px;
+    border-radius:10px;
+    margin-bottom:10px;
 }
 
 
