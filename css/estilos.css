@@ -55,11 +55,17 @@ h1 strong{
 .hero h1{
     margin-right:50%;
 }
+.portfolio{
+    background-color:#FAFAFA;
+    
+}
 .project{
     padding:20px;
     border:1px solid gray;
     border-radius:10px;
-    margin-bottom:10px;
+    margin:10px;
+    margin-bottom:15px;
+    background-color:white;
 }
 
 
