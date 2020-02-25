@@ -77,3 +77,20 @@ h1 strong{
     display: inline-block;
     width:400px;
 }
+
+
+.flex{
+    display:flex;
+    flex-direction: row;
+    
+    flex-wrap:wrap;
+
+}
+
+.box{
+    width:200px;
+    height:200px;
+    margin:10px;
+    flex-shrink:0;
+    border:1px solid red;
+}
