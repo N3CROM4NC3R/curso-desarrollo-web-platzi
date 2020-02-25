@@ -82,8 +82,8 @@ h1 strong{
 .flex{
     display:flex;
     flex-direction: row;
-    
-    flex-wrap:wrap;
+    justify-content: space-between;
+
 
 }
 
@@ -91,6 +91,6 @@ h1 strong{
     width:200px;
     height:200px;
     margin:10px;
-    flex-shrink:0;
+    
     border:1px solid red;
 }
