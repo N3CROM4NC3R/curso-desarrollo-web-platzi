@@ -22,20 +22,60 @@ h1 strong{
     color:#026FFF;
 }
 
+.wrapper{
+    margin:0 auto;
+    display:inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    width:900px;
+
+
+}
+
 .header{
     margin:0;
     background-color:#1b2127;
-    color:#FFFFFF
+    color:#FFFFFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:90px;
+}
+
+ol,
+li{
+    padding:0;
+    margin:0;
+}
+figure{
+    margin:0;
 }
 .logo{
     margin-top:0;
+    vertical-align: middle;
+
 }
+.menu{
+    height:inherit;
+}
+
 .menu ol {
-    margin-bottom:0;
+    height:inherit;
+    display:flex;
+
 }
-.menu ol * {
+.menu ol li{
+    height:inherit;
     list-style:none;
-    display: inline-block;
+
+}
+.menu ol li a{
+    text-decoration:none;
+
+    padding:0px 10px;
+    display:flex;
+    align-items: center;
+    height:inherit;
 }
 .link{
     color:#FFFFFF;
@@ -51,9 +91,14 @@ h1 strong{
     height:300px;
     background-repeat:no-repeat;
     background-position-x:right;
+    display:flex;
+    align-items: center;
+
 }
 .hero h1{
-    margin-right:50%;
+    margin:0;
+    width:50%;
+
 }
 .portfolio{
     background-color:#FAFAFA;
@@ -77,33 +122,148 @@ h1 strong{
     display: inline-block;
     width:400px;
 }
-
-
-.flex{
+.event-list{
+    padding:20px;
+}
+.event-list-title{
+    color:blue;
+    text-align:center;
+    font-weight: 600;
+}
+.event-container{
     display:flex;
-    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap:wrap;
+}
+.event{
+    /* border:1px solid red; */
+    margin:10px;
+    width:420px;
+    background-color:#f4fbff;
+}
 
-    align-items: center;
-    justify-content: center;
-    height:300px;
-
+.event img{
+    width:420px;
+    height:200px;
+    object-fit: cover;
+    border-radius:10px;
+    overflow:hidden;
 
 }
 
-.box{
+.event-detail{
+    background-color:#FFFFFF;
+
+    /* opacity: 0.9; */
+    margin:20px 40px;
+    margin-top:-60px;
+    padding:10px;
+    border-radius:3px;
+    position:relative;
+    text-align:center;
+}
+.event-description{
+    text-align:left;
+}
+.event-url{
+    border:1px solid blue;
+    color:blue;
+    padding:10px;
+    border-radius:10px;
+    text-decoration:none;
+    margin:10px;
+    font-weight: 600;
+}
+
+
+.contact{
+    background-color:#056fff;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:150px;
+    color:#FFFFFF;
+}
+.social{
+    margin-right:50px;
+}
+
+
+.social-link{
+    /* border:1px solid red; */
+    margin-left:10px;
     width:50px;
     height:50px;
-    margin:10px;
+    display:inline-block;
 
-    border:1px solid red;
+
 }
-.box:nth-child(1){
-    align-self: flex-start;
+.social-link.twitter{
+    background-image:url('../images/twitter.svg');
+    background-size:50px;
+
 }
 
-.box:nth-child(2){
-    align-self: flex-end;
+.social-link.facebook{
+    background-image:url('../images/facebook.svg');
+    background-size:50px;
 }
-.box:nth-child(3){
-    align-self: flex-start;
+.social-link.github{
+    background-image:url('../images/github.svg');
+    background-size:50px;
+}
+.social-link.instagram{
+    background-image:url('../images/instagram.svg');
+    background-size:50px;
+}
+
+.form-email{
+    margin-left:20px;
+
+}
+.form-email h3{
+    font-family:'Source Sans Pro';
+    font-weight: 600;
+}
+
+.form-email input{
+    border-color:gray;
+    border-style:solid;
+    padding:5px 20px 5px 30px;
+    border-radius:5px;
+    font-weight:600;
+    color:gray;
+    background-image:url('../images/envelope.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:20px 20px;
+    background-position-y:center;
+    background-position-x:5px;
+    display:block;
+}
+.form-email button{
+    color:#FFFFFF;
+    border:1px solid #FFFFFF;
+    border-radius:5px;
+    padding:10px 0;
+    margin-top:10px;
+    background-color:transparent;
+    width:100px;
+
+}
+
+.footer{
+    color:#FFFFFF;
+    background-color:#1b2127;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+.footer img{
+    vertical-align:middle;
+}
+
+.footer a{
+    color:#FFFFFF;
 }
